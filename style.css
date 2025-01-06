@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter/Inter-VariableFont.ttf') format('truetype');
+    font-style: normal;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5F5;
+
+}
+
+main {
+    margin-top: 100px;
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.lista-navegacion {
+    font-weight: normal;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+@media screen and (max-width: 635px) {
+    .lista-navegacion {
+        flex-wrap: wrap;
+    }
+    .h2 {
+        flex-wrap: nowrap;
+    }
+}
+
+.section-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.imagen-principal {
+    display: flex;
+    height: 50%;
+    align-items: end;
+}
+
+.section-principal h1 {
+    display: flex;
+    font-size: 64px;
+    margin-bottom: 10px;
+    max-width: 540px;
+}
+
+.parrafo-principal {
+    font-size: 18px;
+}
+
+.submit {
+    background-color: #8EADD5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    max-width: 167px;
+}
+
+.articulo-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-empresas {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-empresas ul {
+    display: flex;
+    max-width: auto;
+    flex-wrap: wrap;
+}
+
+.lista-empresas {
+    list-style: none;
+    gap: 100px;
+}
+
+@media (max-width: 768px) {
+    .testimonios ul {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonios ul {
+        width: 100%;
+    }
+}
+
+.section-testimonios {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-testimonios > p {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.testimonios {
+    display: flex;
+    align-content: space-evenly;
+    gap: 20px;
+}
+
+.testimonios img {
+    max-height: 150px;
+    max-width: auto;
+}
+
+.testimonios figcaption {
+    max-width: 333px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonios figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonios figcaption p {
+    font-weight: normal;
+}
+
+.testimonios ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.testimonios ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section-footer {
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.section-footer ul li:first-child {
+    font-weight: bold;
+}
+
+.section-footer ul {
+    list-style: none;
+}
+
+.section-footer ul li {
+    margin-bottom: 30px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
