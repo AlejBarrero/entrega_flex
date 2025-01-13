@@ -10,6 +10,11 @@
 
 }
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
 main {
     margin-top: 100px;
     margin: 20px;
@@ -36,12 +41,28 @@ h2 {
     gap: 2em;
 }
 
-@media screen and (max-width: 635px) {
+@media (max-width: 768px) {
     .lista-navegacion {
         flex-wrap: wrap;
     }
+
     .h2 {
         flex-wrap: nowrap;
+    }
+
+    .testimonios ul {
+        width: 45%;
+    }
+
+    .section-principal {
+        flex-direction: column;
+        gap: 50px; /* Reduce el espacio */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .testimonios ul {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center;
     }
 }
 
@@ -103,12 +124,6 @@ h2 {
 .lista-empresas {
     list-style: none;
     gap: 100px;
-}
-
-@media (max-width: 768px) {
-    .testimonios ul {
-        width: 45%;
-    }
 }
 
 @media (max-width: 480px) {
